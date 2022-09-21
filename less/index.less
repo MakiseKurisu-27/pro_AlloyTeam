@@ -1,0 +1,55 @@
+// banner
+.carousel {
+    // 如果视口<768  图250  max-width
+    // 如果视口<992  图400  max-width
+    // 如果视口>992  图500  mix-width
+    
+    img {
+        height: 100%!important;
+        width: 100%!important;
+    }
+
+    @media (max-width: 992px) {
+        .item {
+            // 在本人电脑变成了400px
+            height: 320px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .item {
+            // 在本人电脑变成了250px
+            height: 200px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .item {
+            // 在本人电脑变成了500px
+            height: 400px;
+        }
+    }
+}
+
+// 头部
+.navbar-default {
+    // 背景全透明
+    background-color: transparent;
+    border: 0;
+}
+
+// 开源项目
+.project {
+    padding-top: 30px;
+    text-align: center;
+
+    .container {
+        // background-color: pink;
+        a {
+            display: block;
+            // 工作中使内容撑起高度
+            height: 200px;
+            background-color: skyblue;
+        }
+    }
+}
